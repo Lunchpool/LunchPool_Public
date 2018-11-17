@@ -1,5 +1,7 @@
 ![lunchpool](https://user-images.githubusercontent.com/11463275/48664367-8fd06680-ea6b-11e8-9c91-d0a5ead90114.png)
 
+<hr/>
+
 ## Meet new friends at work
 1) Get paired with LunchBuds
 2) Find new LunchBuds
