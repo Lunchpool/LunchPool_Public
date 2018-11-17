@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import TopBar from './TopBar';
 import TimeSlotPicker from './TimeSlotPicker';
 import map from './img/map.png';

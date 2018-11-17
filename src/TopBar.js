@@ -5,15 +5,12 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import lunchpools from './img/lunchpools.svg';
+import './css/TopBar.css'
 
 const styles = {
   root: {
     flexGrow: '1'
   },
-  logo: {
-    maxHeight: '60px',
-    fill: 'red'
-  }
 };
 
 function SimpleAppBar(props) {
@@ -23,7 +20,9 @@ function SimpleAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" color="primary">
         <Toolbar>
-          <img src={lunchpools} style={styles.logo} />
+          <div className="logo-wrapper">
+            <img src={lunchpools} />
+          </div>
         </Toolbar>
       </AppBar>
     </div>
