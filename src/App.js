@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import TopBar from './TopBar';
 import './css/App.css';
 import Lunch from './Lunch';
+import LunchScanning from './LunchScanning';
 
 class App extends Component {
   render() {
