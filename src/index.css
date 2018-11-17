@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 200px;
+  background: rgba(0,0,0,.2);
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 5px solid #3e4eb8;
+}
+
+.map img {
+  position: relative;
+  width: 100%;
+}
+
+#lunch-button {
+  margin-top: 40px;
+}

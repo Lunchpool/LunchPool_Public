@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TopBar from './TopBar';
+import TimeSlotPicker from './TimeSlotPicker';
+import map from './img/map.png';
+import Button from '@material-ui/core/Button';
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <TopBar />
+        <h2>Choose time</h2>
+        <TimeSlotPicker />
+        <h2>Confirm area</h2>
+        <div className="map">
+          <div className="circle" />
+          <img src={map} />
+        </div>
+
+        <Button variant="contained" size="large" color="primary" id="lunch-button">
+          Let's go for lunch
+        </Button>
       </div>
     );
   }
