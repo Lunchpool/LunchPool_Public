@@ -3,6 +3,32 @@
     position: fixed;
     width: 100%;
     height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.lunch-scanning .bag {
+    max-height: 150px;
+    animation: App-logo-jump infinite 1s linear;
+    height: 40vmin;
+}
+
+.lunch-scanning h2 {
+    color: #fff;
+    margin-bottom: 150px;
+}
+
+
+@keyframes App-logo-jump {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-50px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
 }
