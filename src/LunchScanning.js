@@ -6,7 +6,7 @@ class LunchScanning extends Component {
 
   render() {
     return (
-      <div class="lunch-scanning">
+      <div className="lunch-scanning">
         <h2>Choose time</h2>
 
       </div>

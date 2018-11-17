@@ -12,6 +12,7 @@ class App extends Component {
         <div>
           <TopBar />
           <Route exact path="/" component={Lunch} />
+          <Route exact path="/searching" component={LunchScanning} />
         </div>
       </Router>
     );

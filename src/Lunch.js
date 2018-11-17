@@ -6,6 +6,14 @@ import map from './img/map.png';
 import './css/Lunch.css';
 
 class Lunch extends Component {
+  constructor () {
+    super();
+
+    this.start = this.start.bind(this);
+  }
+  start () {
+    this.props.history.push('/searching');
+  }
 
   render() {
     return (
@@ -18,7 +26,8 @@ class Lunch extends Component {
           <img src={map} />
         </div>
 
-        <Button variant="contained" size="large" color="primary" id="lunch-button">
+
+        <Button variant="contained" size="large" color="primary" id="lunch-button" onClick={this.start}>
           Let's go for lunch
         </Button>
       </div>
