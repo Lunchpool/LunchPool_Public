@@ -5,3 +5,9 @@
 2) Find new LunchBuds
 
 ## Never Eat Alone 
+
+## Features on the Roadmap
+1) Set up lunchpools with coworkers
+2) Find people in your geographic area to lunchpool with
+3) Integrate with your calendar or scheduling app of choice
+4) Food ordering and bill resolution to maximize your lunch break time
