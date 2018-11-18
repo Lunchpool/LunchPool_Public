@@ -8,7 +8,6 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import CommentIcon from '@material-ui/icons/Comment';
 
 import './css/LunchResult.css';
-import avatar from './img/remy.jpg';
 import selectedMap from './img/selectedMap.png';
 import richard from './img/richard.png';
 import betty from './img/betty.png';

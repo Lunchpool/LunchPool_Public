@@ -24,6 +24,15 @@ class Lunch extends Component {
     this.start = this.start.bind(this);
     this.toggleButton = this.toggleButton.bind(this);
   }
+
+  componentWillMount () {
+    document.getElementsByTagName('body')[0].classList.add('lunch');
+  }
+
+  componentWillUnmount () {
+    document.getElementsByTagName('body')[0].classList.remove('lunch');
+  }
+
   start () {
     this.props.history.push('/searching');
   }
