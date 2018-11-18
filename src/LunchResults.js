@@ -10,6 +10,9 @@ import CommentIcon from '@material-ui/icons/Comment';
 import './css/LunchResult.css';
 import avatar from './img/remy.jpg';
 import selectedMap from './img/selectedMap.png';
+import richard from './img/richard.png';
+import betty from './img/betty.png';
+import alin from './img/alin.png';
 
 class LunchResults extends Component {
 
@@ -17,10 +20,9 @@ class LunchResults extends Component {
     super();
 
     this.names = [
-      'Tom F.',
-      'Tom F.',
-      'Tom F.',
-      'Tom F.',
+      {name: 'Betty P.', photoSrc: betty},
+      {name: 'Richard M.', photoSrc: richard},
+      {name: 'Alin I.', photoSrc: alin},
     ];
   }
 
@@ -31,10 +33,10 @@ class LunchResults extends Component {
         <h2>Your place is Grandma Cafe at Collins Street, 11301, Tampa Bay.</h2>
         <img className="selectedMap" src={selectedMap} />
         <List dense>
-          {[0, 1, 2, 3].map(value => (
-            <ListItem key="value" button>
-              <Avatar alt="Remy Sharp" src={avatar} />
-              <ListItemText primary={this.names[value]} />
+          {[0, 1, 2].map(value => (
+            <ListItem key={value} button>
+              <Avatar alt="Remy Sharp" src={this.names[value].photoSrc} />
+              <ListItemText primary={this.names[value].name} />
               <ListItemSecondaryAction>
                 <IconButton aria-label="Comments">
                   <CommentIcon />
