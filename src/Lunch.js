@@ -47,6 +47,7 @@ class Lunch extends Component {
   render() {
     return (
       <div className="App">
+        <h2 className="invitation">Brian, ready for lunch?</h2>
         <h2>Choose time</h2>
         <TimeSlotPicker />
         <h2>Confirm area</h2>

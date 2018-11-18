@@ -18,6 +18,11 @@
     border: 5px solid #3e4eb8;
 }
 
+.invitation {
+    color: #6599d7;
+    font-size: 2em;
+}
+
 .map img {
     position: relative;
     width: 100%;
