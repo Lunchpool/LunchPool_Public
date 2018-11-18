@@ -1,11 +1,12 @@
 .lunch-result {
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
     background-color: #3f51b5;
     z-index: -1;
     color: #fff;
-
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .lunch-result > h2 {
@@ -15,4 +16,13 @@
 
 .lunch-result p {
     text-align: center;
+}
+
+.lunch-result span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.lunch-result .selectedMap {
+    width: 100%;
 }

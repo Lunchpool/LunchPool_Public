@@ -5,16 +5,18 @@ import './css/App.css';
 import Lunch from './Lunch';
 import LunchScanning from './LunchScanning';
 import LunchResults from './LunchResults';
+import LunchNoResults from './LunchNoResults';
 
 class App extends Component {
   render() {
     return (
       <Router className="App">
         <div>
-          <TopBar />
+          <TopBar  />
           <Route exact path="/" component={Lunch} />
           <Route exact path="/searching" component={LunchScanning} />
           <Route exact path="/results" component={LunchResults} />
+          <Route exact path="/no-results" component={LunchNoResults} />
         </div>
       </Router>
     );

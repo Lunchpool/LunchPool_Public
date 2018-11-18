@@ -24,6 +24,15 @@
 }
 
 #lunch-button {
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pools button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.pools button svg {
+    height: .8em;
 }

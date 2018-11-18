@@ -1,16 +1,48 @@
 import React, { Component } from 'react';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import CommentIcon from '@material-ui/icons/Comment';
 
 import './css/LunchResult.css';
+import avatar from './img/remy.jpg';
+import selectedMap from './img/selectedMap.png';
 
 class LunchResults extends Component {
+
+  constructor () {
+    super();
+
+    this.names = [
+      'Tom F.',
+      'Tom F.',
+      'Tom F.',
+      'Tom F.',
+    ];
+  }
 
   render() {
     return (
       <div className="lunch-result">
-        <h2>Nice, but nobody wants to have lunch with you</h2>
-        <p>
-          We are sorry. Please donate us $1.
-        </p>
+        <h2>We did it! We found your lunch mates. </h2>
+        <h2>Your place is Grandma Cafe at Collins Street, 11301, Tampa Bay.</h2>
+        <img className="selectedMap" src={selectedMap} />
+        <List dense>
+          {[0, 1, 2, 3].map(value => (
+            <ListItem key="value" button>
+              <Avatar alt="Remy Sharp" src={avatar} />
+              <ListItemText primary={this.names[value]} />
+              <ListItemSecondaryAction>
+                <IconButton aria-label="Comments">
+                  <CommentIcon />
+                </IconButton>
+              </ListItemSecondaryAction>
+            </ListItem>
+          ))}
+        </List>
       </div>
     );
   }

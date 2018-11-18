@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -16,12 +16,16 @@ const styles = {
 function SimpleAppBar(props) {
   const { classes } = props;
 
+  function goHome () {
+    window.location.href = '/';
+  }
+
   return (
     <div className={classes.root}>
       <AppBar position="static" color="primary">
         <Toolbar>
           <div className="logo-wrapper">
-            <img src={lunchpools} />
+            <img src={lunchpools} onClick={goHome} />
           </div>
         </Toolbar>
       </AppBar>
