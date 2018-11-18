@@ -18,14 +18,11 @@ class CountDownTimer extends Component {
     };
 
     return (
-      <div className="lunch-scanning">
-        <h2>Choose time</h2>
+      <div className="counter">
         <Countdown
-          date={Date.now() + 1000000}
+          date={Date.now() + 180000}
           renderer={renderer}
-        />,
-
-
+        />
       </div>
     );
   }

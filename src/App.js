@@ -4,6 +4,7 @@ import TopBar from './TopBar';
 import './css/App.css';
 import Lunch from './Lunch';
 import LunchScanning from './LunchScanning';
+import LunchResults from './LunchResults';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <TopBar />
           <Route exact path="/" component={Lunch} />
           <Route exact path="/searching" component={LunchScanning} />
+          <Route exact path="/results" component={LunchResults} />
         </div>
       </Router>
     );
