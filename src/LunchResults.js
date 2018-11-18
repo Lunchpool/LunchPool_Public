@@ -10,39 +10,39 @@ import CommentIcon from '@material-ui/icons/Comment';
 import './css/LunchResult.css';
 import avatar from './img/remy.jpg';
 import selectedMap from './img/selectedMap.png';
+import TopBar from './TopBar';
 
 class LunchResults extends Component {
-
-  constructor () {
+  constructor() {
     super();
 
-    this.names = [
-      'Tom F.',
-      'Tom F.',
-      'Tom F.',
-      'Tom F.',
-    ];
+    this.names = ['Tom F.', 'Tom F.', 'Tom F.', 'Tom F.'];
   }
 
   render() {
     return (
-      <div className="lunch-result">
-        <h2>We did it! We found your lunch mates. </h2>
-        <h2>Your place is Grandma Cafe at Collins Street, 11301, Tampa Bay.</h2>
-        <img className="selectedMap" src={selectedMap} />
-        <List dense>
-          {[0, 1, 2, 3].map(value => (
-            <ListItem key="value" button>
-              <Avatar alt="Remy Sharp" src={avatar} />
-              <ListItemText primary={this.names[value]} />
-              <ListItemSecondaryAction>
-                <IconButton aria-label="Comments">
-                  <CommentIcon />
-                </IconButton>
-              </ListItemSecondaryAction>
-            </ListItem>
-          ))}
-        </List>
+      <div>
+        <TopBar />
+        <div className="lunch-result">
+          <h2>We did it! We found your lunch mates. </h2>
+          <h2>
+            Your place is Grandma Cafe at Collins Street, 11301, Tampa Bay.
+          </h2>
+          <img className="selectedMap" src={selectedMap} />
+          <List dense>
+            {[0, 1, 2, 3].map(value => (
+              <ListItem key="value" button>
+                <Avatar alt="Remy Sharp" src={avatar} />
+                <ListItemText primary={this.names[value]} />
+                <ListItemSecondaryAction>
+                  <IconButton aria-label="Comments">
+                    <CommentIcon />
+                  </IconButton>
+                </ListItemSecondaryAction>
+              </ListItem>
+            ))}
+          </List>
+        </div>
       </div>
     );
   }

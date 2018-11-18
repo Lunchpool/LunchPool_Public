@@ -5,9 +5,10 @@ import KeyIcon from '@material-ui/icons/VpnKey';
 
 import map from './img/map.png';
 import './css/Lunch.css';
+import TopBar from './TopBar';
 
 class Lunch extends Component {
-  constructor () {
+  constructor() {
     super();
 
     this.state = {};
@@ -24,43 +25,57 @@ class Lunch extends Component {
     this.start = this.start.bind(this);
     this.toggleButton = this.toggleButton.bind(this);
   }
-  start () {
+  start() {
     this.props.history.push('/searching');
   }
 
   toggleButton(event) {
     let id = event.currentTarget.getAttribute('data-id');
     this.setState({
-      [id]: !this.state[id]
+      [id]: !this.state[id],
     });
   }
 
   render() {
     return (
-      <div className="App">
-        <h2>Choose time</h2>
-        <TimeSlotPicker />
-        <h2>Confirm area</h2>
-        <div className="map">
-          <div className="circle" />
-          <img src={map} />
+      <div>
+        <TopBar />
+        <div className="App">
+          <h2>Choose time</h2>
+          <TimeSlotPicker />
+          <h2>Confirm area</h2>
+          <div className="map">
+            <div className="circle" />
+            <img src={map} />
+          </div>
+          <h2>Pick pools</h2>
+          <div className="pools">
+            {[...Array(6)].map((x, i) => (
+              <Button
+                variant={this.state[i] ? 'contained' : 'outlined'}
+                size="small"
+                color="secondary"
+                onClick={this.toggleButton}
+                data-id={i}
+                key={i}
+              >
+                {i === 4 && <KeyIcon />}
+                {this.poolNames[i]}
+              </Button>
+            ))}
+          </div>
+
+          <br />
+          <Button
+            variant="contained"
+            size="large"
+            color="primary"
+            id="lunch-button"
+            onClick={this.start}
+          >
+            Let's go for lunch
+          </Button>
         </div>
-        <h2>Pick pools</h2>
-        <div className="pools">
-          {[...Array(6)].map((x, i) =>
-            <Button variant={this.state[i] ? 'contained' : 'outlined'} size="small" color="secondary" onClick={this.toggleButton} data-id={i} key={i}>
-              {i === 4 && <KeyIcon />}
-              {this.poolNames[i]}
-            </Button>
-          )}
-        </div>
-
-
-
-        <br />
-        <Button variant="contained" size="large" color="primary" id="lunch-button" onClick={this.start}>
-          Let's go for lunch
-        </Button>
       </div>
     );
   }
