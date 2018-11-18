@@ -15,7 +15,7 @@
     height: 200px;
     z-index: 1;
     border-radius: 50%;
-    border: 5px solid #3e4eb8;
+    border: 5px solid #f73812;
 }
 
 .invitation {
@@ -29,8 +29,11 @@
 }
 
 #lunch-button {
-    margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.pools {
+    padding: 0 10px;
 }
 
 .pools button {

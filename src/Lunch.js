@@ -10,13 +10,15 @@ class Lunch extends Component {
   constructor () {
     super();
 
-    this.state = {};
+    this.state = {
+      0: true,
+    };
 
     this.poolNames = {
-      0: 'Tampa Bay',
-      1: 'Weekend Startup',
-      2: 'Teenager',
-      3: 'Dead People',
+      0: 'Everyone',
+      1: 'Startup Weekend Tampa',
+      2: 'Teenagers',
+      3: 'Tampa Bay',
       4: 'KnowBe4 Secret Group',
       5: 'Only Tampa Women',
     };
@@ -47,7 +49,6 @@ class Lunch extends Component {
   render() {
     return (
       <div className="App">
-        <h2 className="invitation">Brian, ready for lunch?</h2>
         <h2>Choose time</h2>
         <TimeSlotPicker />
         <h2>Confirm area</h2>
@@ -59,13 +60,11 @@ class Lunch extends Component {
         <div className="pools">
           {[...Array(6)].map((x, i) =>
             <Button variant={this.state[i] ? 'contained' : 'outlined'} size="small" color="secondary" onClick={this.toggleButton} data-id={i} key={i}>
-              {i === 4 && <KeyIcon />}
+              {(i === 4 || i === 1) && <KeyIcon />}
               {this.poolNames[i]}
             </Button>
           )}
         </div>
-
-
 
         <br />
         <Button variant="contained" size="large" color="primary" id="lunch-button" onClick={this.start}>

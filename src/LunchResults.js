@@ -29,7 +29,7 @@ class LunchResults extends Component {
     return (
       <div className="lunch-result">
         <h2>We did it! We found your lunch mates. </h2>
-        <h2>Your place is Grandma Cafe at Collins Street, 11301, Tampa Bay.</h2>
+        <h2>12:00, Fabrica Pizza 142 S Meridian Ave, Tampa, FL 33602.</h2>
         <img className="selectedMap" src={selectedMap} />
         <List dense>
           {[0, 1, 2].map(value => (

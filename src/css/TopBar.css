@@ -1,11 +1,20 @@
 .logo-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
 .logo-wrapper > img {
     max-height: 45px;
     margin: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    height: 55px;
+    margin-left: 15px;
 }

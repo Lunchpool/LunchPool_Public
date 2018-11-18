@@ -29,17 +29,13 @@ function SimpleAppBar(props) {
             <img src={lunchpools} onClick={goHome} />
           </div>
 
-          <img
-            src={brian}
-            style={{
-              position: 'absolute',
-              top: '0',
-              right: '10px',
-              height: '100%',
-              padding: '7px',
-              boxSizing: 'border-box',
-            }}
-          />
+          <div className="profile">
+            <div>Brian</div>
+            <img
+              src={brian}
+            />
+          </div>
+
         </Toolbar>
       </AppBar>
     </div>
