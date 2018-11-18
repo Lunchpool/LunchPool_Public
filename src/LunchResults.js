@@ -12,12 +12,11 @@ import selectedMap from './img/selectedMap.png';
 import richard from './img/richard.png';
 import betty from './img/betty.png';
 import alin from './img/alin.png';
+import TopBar from './TopBar';
 
 class LunchResults extends Component {
-
-  constructor () {
+  constructor() {
     super();
-
     this.names = [
       {name: 'Betty P.', photoSrc: betty},
       {name: 'Richard M.', photoSrc: richard},
@@ -27,6 +26,8 @@ class LunchResults extends Component {
 
   render() {
     return (
+      <div>
+        <TopBar />
       <div className="lunch-result">
         <h2>We did it! We found your lunch mates. </h2>
         <h2>12:00, Fabrica Pizza 142 S Meridian Ave, Tampa, FL 33602.</h2>
@@ -44,6 +45,7 @@ class LunchResults extends Component {
             </ListItem>
           ))}
         </List>
+        </div>
       </div>
     );
   }

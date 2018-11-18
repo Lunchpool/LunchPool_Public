@@ -5,9 +5,10 @@ import KeyIcon from '@material-ui/icons/VpnKey';
 
 import map from './img/map.png';
 import './css/Lunch.css';
+import TopBar from './TopBar';
 
 class Lunch extends Component {
-  constructor () {
+  constructor() {
     super();
 
     this.state = {
@@ -26,7 +27,6 @@ class Lunch extends Component {
     this.start = this.start.bind(this);
     this.toggleButton = this.toggleButton.bind(this);
   }
-
   componentWillMount () {
     document.getElementsByTagName('body')[0].classList.add('lunch');
   }
@@ -42,12 +42,14 @@ class Lunch extends Component {
   toggleButton(event) {
     let id = event.currentTarget.getAttribute('data-id');
     this.setState({
-      [id]: !this.state[id]
+      [id]: !this.state[id],
     });
   }
 
   render() {
     return (
+      <div>
+        <TopBar />
       <div className="App">
         <h2>Choose time</h2>
         <TimeSlotPicker />
@@ -71,6 +73,8 @@ class Lunch extends Component {
           Let's go for lunch
         </Button>
       </div>
+      </div>
+
     );
   }
 }
