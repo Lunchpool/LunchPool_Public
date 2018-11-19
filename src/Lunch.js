@@ -5,7 +5,6 @@ import KeyIcon from '@material-ui/icons/VpnKey';
 
 import map from './img/map.png';
 import './css/Lunch.css';
-import TopBar from './TopBar';
 
 class Lunch extends Component {
   constructor() {
@@ -48,8 +47,6 @@ class Lunch extends Component {
 
   render() {
     return (
-      <div>
-        <TopBar />
       <div className="App">
         <h2>Choose time</h2>
         <TimeSlotPicker />
@@ -72,7 +69,6 @@ class Lunch extends Component {
         <Button variant="contained" size="large" color="primary" id="lunch-button" onClick={this.start}>
           Let's go for lunch
         </Button>
-      </div>
       </div>
 
     );

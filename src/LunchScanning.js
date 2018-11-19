@@ -3,7 +3,6 @@ import CountDownTimer from './CountDownTimer';
 
 import './css/LunchScanning.css';
 import LunchBag from './img/lunchbag.svg';
-import TopBar from './TopBar';
 
 class LunchScanning extends Component {
   render() {
@@ -12,14 +11,11 @@ class LunchScanning extends Component {
     }, 10000);
 
     return (
-      <div>
-        <TopBar />
         <div className="lunch-scanning">
           <h2>Looking for your lunch mates...</h2>
           <CountDownTimer />
           <img src={LunchBag} alt="lunchBag" className="bag" />
         </div>
-      </div>
     );
   }
 }
