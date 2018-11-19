@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './css/App.css';
 import SplashPage from './SplashPage';
-import Topics from './Topics';
+import Application from './Application';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -23,7 +23,7 @@ class App extends Component {
         <MuiThemeProvider theme={theme}>
           <Route exact path="/" component={SplashPage} />
           {/*<TopBar  />*/}
-          <Route path="/topics" component={Topics} />
+          <Route path="/app" component={Application} />
         </MuiThemeProvider>
       </Router>
     );
