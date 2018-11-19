@@ -36,7 +36,7 @@ class Lunch extends Component {
   }
 
   start () {
-    this.props.history.push('/searching');
+    this.props.history.push('searching');
   }
 
   toggleButton(event) {

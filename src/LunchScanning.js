@@ -8,7 +8,7 @@ import TopBar from './TopBar';
 class LunchScanning extends Component {
   render() {
     setTimeout(() => {
-      this.props.history.push('/results');
+      this.props.history.push('results');
     }, 10000);
 
     return (
