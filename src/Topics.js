@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './css/LunchScanning.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-const Topic = ({ match }) => <h3>Requested Param: {match.params.id}</h3>;
+import Lunch from './Lunch';
+import LunchScanning from './LunchScanning';
+import LunchResults from './LunchResults';
+import LunchNoResults from './LunchNoResults';
 
 class Topics extends Component {
   render() {
@@ -10,22 +12,10 @@ class Topics extends Component {
     console.log({ match });
     return (
       <div className="App">
-        <h2>Topics</h2>
-        <ul>
-          <li>
-            <Link to={`${match.url}/components`}>Components</Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-          </li>
-        </ul>
-
-        <Route path={`${match.path}/:id`} component={Topic} />
-        <Route
-          exact
-          path={match.path}
-          render={() => <h3>Please select a topic.</h3>}
-        />
+        <Route path={`${match.url}/lunch`} component={Lunch} />
+        <Route path={`${match.url}/searching`} component={LunchScanning} />
+        <Route path={`${match.url}/results`} component={LunchResults} />
+        <Route path={`${match.url}/no-results`} component={LunchNoResults} />
       </div>
     );
   }
