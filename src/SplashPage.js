@@ -13,6 +13,7 @@ class SplashPage extends Component {
   render() {
     return (
       <iframe
+        title="splash page"
         src="https://lunchpools.com/"
         style={{ width: '100%', height: '100%',position: 'fixed', border:'none' }}
       />

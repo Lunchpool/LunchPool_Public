@@ -56,7 +56,7 @@ class Lunch extends Component {
         <h2>Confirm area</h2>
         <div className="map">
           <div className="circle" />
-          <img src={map} />
+          <img src={map} alt="map"/>
         </div>
         <h2>Pick pools</h2>
         <div className="pools">

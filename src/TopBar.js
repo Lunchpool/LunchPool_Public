@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import lunchpools from './img/lunchpool.svg';
 import './css/TopBar.css';
 import brian from './img/brian.png';
@@ -17,8 +16,8 @@ const styles = {
 function SimpleAppBar(props) {
   const { classes } = props;
 
-  function goHome () {
-    window.location.href = '/app';
+  function goHome() {
+    window.location.href = '/app/lunch';
   }
 
   return (
@@ -26,16 +25,13 @@ function SimpleAppBar(props) {
       <AppBar position="static" color="primary">
         <Toolbar>
           <div className="logo-wrapper">
-            <img src={lunchpools} onClick={goHome} />
+            <img src={lunchpools} onClick={goHome} alt="lunchpool_logo" />
           </div>
 
           <div className="profile">
             <div>Brian</div>
-            <img
-              src={brian}
-            />
+            <img src={brian} alt="profile_pic" />
           </div>
-
         </Toolbar>
       </AppBar>
     </div>
