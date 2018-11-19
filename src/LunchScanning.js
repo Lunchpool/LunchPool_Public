@@ -11,11 +11,11 @@ class LunchScanning extends Component {
     }, 10000);
 
     return (
-        <div className="lunch-scanning">
-          <h2>Looking for your lunch mates...</h2>
-          <CountDownTimer />
-          <img src={LunchBag} alt="lunchBag" className="bag" />
-        </div>
+      <div className="lunch-scanning">
+        <h2>Looking for your lunch mates...</h2>
+        <CountDownTimer />
+        <img src={LunchBag} alt="lunchBag" className="bag" />
+      </div>
     );
   }
 }

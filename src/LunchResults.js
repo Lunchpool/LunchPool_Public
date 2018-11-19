@@ -25,24 +25,24 @@ class LunchResults extends Component {
 
   render() {
     return (
-        <div className="lunch-result">
-          <h2>We did it! We found your lunch mates. </h2>
-          <h2>12:00, Fabrica Pizza 142 S Meridian Ave, Tampa, FL 33602.</h2>
-          <img className="selectedMap" src={selectedMap} alt="selectedMap" />
-          <List dense>
-            {[0, 1, 2].map(value => (
-              <ListItem key={value} button>
-                <Avatar alt="Remy Sharp" src={this.names[value].photoSrc} />
-                <ListItemText primary={this.names[value].name} />
-                <ListItemSecondaryAction>
-                  <IconButton aria-label="Comments">
-                    <CommentIcon />
-                  </IconButton>
-                </ListItemSecondaryAction>
-              </ListItem>
-            ))}
-          </List>
-        </div>
+      <div className="lunch-result">
+        <h2>We did it! We found your lunch mates. </h2>
+        <h2>12:00, Fabrica Pizza 142 S Meridian Ave, Tampa, FL 33602.</h2>
+        <img className="selectedMap" src={selectedMap} alt="selectedMap" />
+        <List dense>
+          {[0, 1, 2].map(value => (
+            <ListItem key={value} button>
+              <Avatar alt="Remy Sharp" src={this.names[value].photoSrc} />
+              <ListItemText primary={this.names[value].name} />
+              <ListItemSecondaryAction>
+                <IconButton aria-label="Comments">
+                  <CommentIcon />
+                </IconButton>
+              </ListItemSecondaryAction>
+            </ListItem>
+          ))}
+        </List>
+      </div>
     );
   }
 }
