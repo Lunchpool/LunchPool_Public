@@ -18,7 +18,7 @@ function SimpleAppBar(props) {
   const { classes } = props;
 
   function goHome () {
-    window.location.href = '/';
+    window.location.href = '/app';
   }
 
   return (

@@ -18,7 +18,7 @@ class Lunch extends Component {
     this.poolNames = {
       0: 'Everyone',
       1: 'Startup Weekend Tampa',
-      2: 'Teenagers',
+      2: 'Synapse Summit',
       3: 'Tampa Bay',
       4: 'KnowBe4 Secret Group',
       5: 'Only Tampa Women',
