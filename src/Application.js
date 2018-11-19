@@ -6,6 +6,7 @@ import LunchScanning from './LunchScanning';
 import LunchResults from './LunchResults';
 import LunchNoResults from './LunchNoResults';
 import TopBar from './TopBar';
+import './index.css';
 
 class Topics extends Component {
   render() {
