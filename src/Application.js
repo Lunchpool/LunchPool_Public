@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/LunchScanning.css';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import Lunch from './Lunch';
 import LunchScanning from './LunchScanning';
 import LunchResults from './LunchResults';
@@ -14,6 +14,7 @@ class Topics extends Component {
       <div>
         <TopBar />
         <div className="App">
+          <Route exact path="/app" render={() => <Redirect to="/app/lunch" />} />
           <Route path={`${match.url}/lunch`} component={Lunch} />
           <Route path={`${match.url}/searching`} component={LunchScanning} />
           <Route path={`${match.url}/results`} component={LunchResults} />
