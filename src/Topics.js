@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/LunchScanning.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Lunch from './Lunch';
 import LunchScanning from './LunchScanning';
 import LunchResults from './LunchResults';

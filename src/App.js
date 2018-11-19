@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './css/App.css';
-import Lunch from './Lunch';
-import LunchScanning from './LunchScanning';
-import LunchResults from './LunchResults';
-import LunchNoResults from './LunchNoResults';
 import SplashPage from './SplashPage';
 import Topics from './Topics';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
