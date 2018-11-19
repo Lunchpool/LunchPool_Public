@@ -8,8 +8,7 @@ import LunchNoResults from './LunchNoResults';
 
 class Topics extends Component {
   render() {
-    let match = this.props.match;
-    console.log({ match });
+    const match = this.props.match;
     return (
       <div className="App">
         <Route path={`${match.url}/lunch`} component={Lunch} />
