@@ -1,6 +1,6 @@
 <hr/>
 
-![lunchpool](https://user-images.githubusercontent.com/11463275/48716825-32acf000-ebe6-11e8-81d1-69c6a708773d.png)
+![logo - red text](https://user-images.githubusercontent.com/7960991/48717575-b9160180-ebe7-11e8-9786-68980dab412f.png)
 
 <hr/>
 
