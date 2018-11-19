@@ -6,6 +6,7 @@ import LunchScanning from './LunchScanning';
 import LunchResults from './LunchResults';
 import LunchNoResults from './LunchNoResults';
 import SplashPage from './SplashPage';
+import Topics from './Topics';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -26,10 +27,11 @@ class App extends Component {
         <MuiThemeProvider theme={theme}>
           <Route exact path="/" component={SplashPage} />
           {/*<TopBar  />*/}
-          <Route exact path="/app" component={Lunch} />
-          <Route exact path="/searching" component={LunchScanning} />
-          <Route exact path="/results" component={LunchResults} />
-          <Route exact path="/no-results" component={LunchNoResults} />
+          <Route path="/app" component={Lunch} />
+          <Route path="/searching" component={LunchScanning} />
+          <Route path="/results" component={LunchResults} />
+          <Route path="/no-results" component={LunchNoResults} />
+          <Route path="/topics" component={Topics} />
         </MuiThemeProvider>
       </Router>
     );
