@@ -22,7 +22,6 @@ class App extends Component {
       <Router className="App">
         <MuiThemeProvider theme={theme}>
           <Route exact path="/" component={SplashPage} />
-          {/*<TopBar  />*/}
           <Route path="/app" component={Application} />
         </MuiThemeProvider>
       </Router>

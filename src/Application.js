@@ -7,7 +7,7 @@ import LunchResults from './LunchResults';
 import LunchNoResults from './LunchNoResults';
 import TopBar from './TopBar';
 
-class Topics extends Component {
+class Application extends Component {
   render() {
     const match = this.props.match;
     return (
@@ -25,4 +25,4 @@ class Topics extends Component {
   }
 }
 
-export default Topics;
+export default Application;
