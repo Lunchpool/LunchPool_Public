@@ -25,7 +25,7 @@ class LunchResults extends Component {
 
   render() {
     return (
-      <div className="lunch-result">
+      <div className="lunch-result darkmode">
         <h2>We did it! We found your lunch mates. </h2>
         <h2>12:00, Fabrica Pizza 142 S Meridian Ave, Tampa, FL 33602.</h2>
         <img className="selectedMap" src={selectedMap} alt="selectedMap" />

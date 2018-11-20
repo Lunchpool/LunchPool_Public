@@ -11,7 +11,7 @@ class LunchScanning extends Component {
     }, 10000);
 
     return (
-      <div className="lunch-scanning">
+      <div className="lunch-scanning darkmode">
         <h2>Looking for your lunch mates...</h2>
         <CountDownTimer />
         <img src={LunchBag} alt="lunchBag" className="bag" />
