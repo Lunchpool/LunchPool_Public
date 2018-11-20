@@ -1,0 +1,79 @@
+/********* Compiled - Do not edit *********/
+
+:root {
+    --color-primary: #ff798e;
+    --color-gradient-start: #ff798e;
+    --color-gradient-stop: #ff798e;
+}
+
+body {
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 15px;
+    color: #7c7e8e;
+}
+
+body.single-post .content {}
+
+.h1,
+h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.3em;
+    font-size: 48px;
+    color: #181b31;
+}
+
+.h2,
+h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.4em;
+    font-size: 35px;
+    color: #181b31;
+}
+
+.h3,
+h3 {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.4em;
+    font-size: 28px;
+    color: #181b31;
+}
+
+.h4,
+h4 {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.5em;
+    font-size: 24px;
+    color: #181b31;
+}
+
+.h5,
+h5 {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 21px;
+    color: #181b31;
+}
+
+.h6,
+h6 {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #181b31;
+}
+
+.titlebar-inner h1 {}
+
+.titlebar-inner p {}
+
+#content {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+}
