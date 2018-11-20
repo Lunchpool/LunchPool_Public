@@ -13,13 +13,13 @@ class Topics extends Component {
     return (
       <div>
         <TopBar />
-      <div className="App">
+        <div className="App">
           <Route exact path="/app" render={() => <Redirect to="/app/lunch" />} />
-        <Route path={`${match.url}/lunch`} component={Lunch} />
-        <Route path={`${match.url}/searching`} component={LunchScanning} />
-        <Route path={`${match.url}/results`} component={LunchResults} />
-        <Route path={`${match.url}/no-results`} component={LunchNoResults} />
-      </div>
+          <Route path={`${match.url}/lunch`} component={Lunch} />
+          <Route path={`${match.url}/searching`} component={LunchScanning} />
+          <Route path={`${match.url}/results`} component={LunchResults} />
+          <Route path={`${match.url}/no-results`} component={LunchNoResults} />
+        </div>
       </div>
     );
   }

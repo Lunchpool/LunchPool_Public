@@ -26,15 +26,15 @@ class Lunch extends Component {
     this.start = this.start.bind(this);
     this.toggleButton = this.toggleButton.bind(this);
   }
-  componentWillMount () {
+  componentWillMount() {
     document.getElementsByTagName('body')[0].classList.add('lunch');
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     document.getElementsByTagName('body')[0].classList.remove('lunch');
   }
 
-  start () {
+  start() {
     this.props.history.push('searching');
   }
 
@@ -53,24 +53,36 @@ class Lunch extends Component {
         <h2>Confirm area</h2>
         <div className="map">
           <div className="circle" />
-          <img src={map} alt="map"/>
+          <img src={map} alt="map" />
         </div>
         <h2>Pick pools</h2>
         <div className="pools">
-          {[...Array(6)].map((x, i) =>
-            <Button variant={this.state[i] ? 'contained' : 'outlined'} size="small" color="secondary" onClick={this.toggleButton} data-id={i} key={i}>
+          {[...Array(6)].map((x, i) => (
+            <Button
+              variant={this.state[i] ? 'contained' : 'outlined'}
+              size="small"
+              color="secondary"
+              onClick={this.toggleButton}
+              data-id={i}
+              key={i}
+            >
               {(i === 4 || i === 1) && <KeyIcon />}
               {this.poolNames[i]}
             </Button>
-          )}
+          ))}
         </div>
 
         <br />
-        <Button variant="contained" size="large" color="primary" id="lunch-button" onClick={this.start}>
+        <Button
+          variant="contained"
+          size="large"
+          color="primary"
+          id="lunch-button"
+          onClick={this.start}
+        >
           Let's go for lunch
         </Button>
       </div>
-
     );
   }
 }
